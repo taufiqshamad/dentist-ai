@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-15T10:44:00.000Z",
+  "title": "Design System: Dentha Dental Studio",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Deep Architectural Teal",
+        "canonical": "#0D4848",
+        "tonalRamp": ["#072E2E", "#0A3B3B", "#0D4848", "#115B5B", "#167272", "#1F8D8D", "#2FB0B0", "#E6F0EE"]
+      },
+      "porcelain-ground": {
+        "role": "neutral",
+        "displayName": "Porcelain Ground",
+        "canonical": "#F8FAFC",
+        "tonalRamp": ["#0F172A", "#1E293B", "#334155", "#475569", "#64748B", "#94A3B8", "#CBD5E1", "#F8FAFC"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headlines and key clinical propositions." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles." },
+      "body": { "displayName": "Body", "purpose": "Clinical narratives, patient reviews, and procedure descriptions." }
+    },
+    "shadows": [
+      { "name": "card-rest", "value": "0 4px 16px -2px rgba(15, 23, 42, 0.04)", "purpose": "Treatment cards and doctor profiles." },
+      { "name": "float-console", "value": "0 12px 30px -4px rgba(15, 23, 42, 0.08)", "purpose": "Hero conversational chat console." }
+    ],
+    "motion": [
+      { "name": "ease-out-expressive", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Chat message entrance and modal transitions." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary action button used for appointment booking and clinical triage.",
+      "html": "<button class=\"ds-btn-primary\">Reserve Appointment</button>",
+      "css": ".ds-btn-primary { background: #0D4848; color: #FFFFFF; padding: 10px 20px; font-family: 'Figtree', sans-serif; font-size: 13px; font-weight: 500; border-radius: 12px; border: none; cursor: pointer; transition: background 0.15s ease, transform 0.15s ease; } .ds-btn-primary:hover { background: #072E2E; transform: translateY(-1px); }"
+    },
+    {
+      "name": "Suggestion Chip",
+      "kind": "chip",
+      "refersTo": "chip-action",
+      "description": "Conversational suggestion chips embedded in chat.",
+      "html": "<button class=\"ds-chip\">✨ Routine Checkup & Hygiene</button>",
+      "css": ".ds-chip { background: #F1F5F9; color: #0F172A; border: 1px solid #CBD5E1; padding: 6px 14px; font-family: 'Figtree', sans-serif; font-size: 12px; font-weight: 500; border-radius: 9999px; cursor: pointer; transition: background 0.15s ease; } .ds-chip:hover { background: #E2E8F0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Architectural Sanctuary",
+    "overview": "Dentha rejects both the sterile institutional dental template and generic AI slop. It creates a serene, light-filled architectural sanctuary with conversational immediacy at its core.",
+    "keyCharacteristics": [
+      "Conversational triage as primary hero CTA",
+      "Crisp porcelain slate ground with deep architectural teal anchors",
+      "Refined editorial Bodoni Moda display paired with Figtree body"
+    ],
+    "rules": [
+      { "name": "The Rarity of Teal Rule", "body": "Deep teal is reserved for genuine actions and focal points; it never floods backgrounds indiscriminately.", "section": "colors" },
+      { "name": "The Calm Voice Rule", "body": "No all-caps shout text or neon drop shadows; typographic weight and contrast speak for themselves.", "section": "typography" }
+    ],
+    "dos": [
+      "Do keep text contrast above 4.5:1 on all clinical copy",
+      "Do provide direct in-chat booking actions from every treatment and specialist profile"
+    ],
+    "donts": [
+      "Don't use decorative glowing halos or neon drop shadows",
+      "Don't use generic warm beige or cream presets",
+      "Don't use nested cards inside containers"
+    ]
+  }
+}
